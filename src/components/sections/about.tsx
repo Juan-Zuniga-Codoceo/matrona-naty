@@ -85,7 +85,7 @@ export default function About() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Soy una profesional especializada en el cuidado integral de la 
-                salud de la mujer, con énfasis en atención prenatal, lactancia
+                salud de la mujer, con énfasis en atención prenatal, ginecológica, lactancia
                 y prevención del cáncer de mama.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">

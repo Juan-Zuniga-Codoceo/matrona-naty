@@ -1,4 +1,7 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import { PopupButton } from 'react-calendly';
 import {
   Dialog,
   DialogContent,
@@ -7,20 +10,27 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 
-interface ServiceItem {
+interface PriceItem {
   name: string;
   price: string;
+  calendlyUrl: string;
   description?: string;
 }
 
-interface ServiceCategory {
+interface CategoryItem {
   title: string;
   icon: React.ReactNode;
-  services: ServiceItem[];
+  services: PriceItem[];
 }
 
-export default function Services() {
-  const services: ServiceCategory[] = [
+export default function Pricing() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const categories: CategoryItem[] = [
     {
       title: "Consulta General",
       icon: (
@@ -30,8 +40,16 @@ export default function Services() {
         </svg>
       ),
       services: [
-        { name: "Consulta Matrona Remota", price: "10.000" },
-        { name: "Consulta Matrona Presencial", price: "15.000" }
+        { 
+          name: "Consulta Matrona Remota", 
+          price: "10.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/consulta-general"
+        },
+        { 
+          name: "Consulta Matrona Presencial", 
+          price: "15.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/consulta-general"
+        }
       ]
     },
     {
@@ -47,7 +65,8 @@ export default function Services() {
       services: [
         { 
           name: "Asesoría planificación familiar y/o uso de método anticonceptivo",
-          price: "25.000" 
+          price: "25.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/planificacion-familiar"
         }
       ]
     },
@@ -63,9 +82,21 @@ export default function Services() {
         </svg>
       ),
       services: [
-        { name: "Atención Ginecológica", price: "20.000" },
-        { name: "Extracción DIU", price: "20.000" },
-        { name: "Toma de PAP, panel VPH, ITS", price: "30.000" }
+        { 
+          name: "Atención Ginecológica", 
+          price: "20.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-ginecologica"
+        },
+        { 
+          name: "Extracción DIU", 
+          price: "20.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-ginecologica"
+        },
+        { 
+          name: "Toma de PAP, panel VPH, ITS", 
+          price: "30.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-ginecologica"
+        }
       ]
     },
     {
@@ -77,7 +108,11 @@ export default function Services() {
         </svg>
       ),
       services: [
-        { name: "Control Obstétrico", price: "25.000" }
+        { 
+          name: "Control Obstétrico", 
+          price: "25.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-obstetrica"
+        }
       ]
     },
     {
@@ -88,61 +123,73 @@ export default function Services() {
         </svg>
       ),
       services: [
-        { name: "Control Binomio", price: "35.000" },
-        { name: "Asesoría Lactancia Materna", price: "25.000" }
+        { 
+          name: "Control Binomio", 
+          price: "35.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-postparto"
+        },
+        { 
+          name: "Asesoría Lactancia Materna", 
+          price: "25.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-postparto"
+        }
       ]
     }
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-pink-50">
+    <section id="precios" className="py-20 bg-pink-50">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-4">
-          Mis <span className="text-[#E84E89]">Servicios</span>
+          Nuestros <span className="text-[#E84E89]">Precios</span>
         </h2>
         <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-          Ofrecemos una amplia gama de servicios especializados para el cuidado integral
-          de la salud de la mujer.
+          Conoce nuestros servicios y sus valores. Agenda tu hora de manera fácil y rápida.
         </p>
 
         <div className="flex justify-center flex-wrap gap-12 mb-16">
-          {services.map((service, index) => (
+          {categories.map((category, index) => (
             <Dialog key={index}>
               <DialogTrigger asChild>
                 <button className="group flex flex-col items-center">
                   <div className="w-20 h-20 rounded-full bg-white shadow-md flex items-center justify-center mb-4 group-hover:bg-pink-50 transition-all duration-300">
-                    {service.icon}
+                    {category.icon}
                   </div>
                   <span className="text-sm font-medium text-gray-700 text-center max-w-[120px]">
-                    {service.title}
+                    {category.title}
                   </span>
                 </button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[500px]">
                 <DialogHeader>
                   <DialogTitle className="text-2xl font-bold text-[#E84E89] mb-6">
-                    {service.title}
+                    {category.title}
                   </DialogTitle>
                 </DialogHeader>
                 <div className="space-y-4">
-                  {service.services.map((item, idx) => (
+                  {category.services.map((service, idx) => (
                     <div key={idx} className="p-4 border border-pink-100 rounded-lg hover:border-pink-200 transition-colors">
                       <div className="flex justify-between items-start mb-2">
                         <h4 className="text-lg font-semibold text-gray-800">
-                          {item.name}
+                          {service.name}
                         </h4>
                         <span className="text-xl font-bold text-[#E84E89]">
-                          ${item.price}
+                          ${service.price}
                         </span>
                       </div>
-                      {item.description && (
+                      {service.description && (
                         <p className="text-sm text-gray-600 mb-3">
-                          {item.description}
+                          {service.description}
                         </p>
                       )}
-                      <button className="mt-3 w-full bg-[#E84E89] text-white py-2 px-4 rounded-lg hover:bg-[#D63F75] transition-colors">
-                        Agendar Hora
-                      </button>
+                      {mounted && (
+                        <PopupButton
+                          url={service.calendlyUrl}
+                          rootElement={document.body}
+                          text="Agendar Hora"
+                          className="mt-3 w-full bg-[#E84E89] text-white py-2 px-4 rounded-lg hover:bg-[#D63F75] transition-colors"
+                        />
+                      )}
                     </div>
                   ))}
                 </div>
@@ -156,9 +203,6 @@ export default function Services() {
             * Los precios pueden variar según requerimientos específicos. 
             Consulta por convenios y descuentos disponibles.
           </p>
-          <button className="mt-4 bg-[#E84E89] text-white px-8 py-3 rounded-lg hover:bg-[#D63F75] transition-colors shadow hover:shadow-lg">
-            Consultar Disponibilidad
-          </button>
         </div>
       </div>
     </section>
