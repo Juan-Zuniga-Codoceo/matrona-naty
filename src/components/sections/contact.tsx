@@ -44,7 +44,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative py-16 bg-gradient-to-b from-pink-50 to-white">
+    <section id="contact" className="relative py-16 bg-gradient-to-b from-pink-50 to-white">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-2">

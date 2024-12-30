@@ -11,7 +11,7 @@ export default function Schedule() {
   }, []);
 
   return (
-    <section id="agenda" className="py-12 bg-white">
+    <section id="schedule" className="py-12 bg-white">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold mb-2">
