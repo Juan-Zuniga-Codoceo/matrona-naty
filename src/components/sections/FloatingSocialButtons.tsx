@@ -4,7 +4,7 @@ const FloatingSocialButtons = () => {
   return (
     <div className="fixed right-4 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-50">
       <a
-        href="https://facebook.com"
+        href=" https://www.facebook.com/share/15SwiWttZD/"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#E84E89] hover:bg-[#D63F75] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -19,7 +19,7 @@ const FloatingSocialButtons = () => {
       </a>
       
       <a
-        href="https://instagram.com"
+        href="https://www.instagram.com/matrona.naty/profilecard/?igsh=NTB3NjllaXF4cG1v"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#E84E89] hover:bg-[#D63F75] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -34,7 +34,7 @@ const FloatingSocialButtons = () => {
       </a>
 
       <a
-        href="https://tiktok.com"
+        href="http://tiktok.com/@matrona.naty"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#E84E89] hover:bg-[#D63F75] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
@@ -49,7 +49,7 @@ const FloatingSocialButtons = () => {
       </a>
 
       <a
-        href="https://wa.me/1234567890"
+        href="https://wa.me/+56993314396"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#E84E89] hover:bg-[#D63F75] text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
