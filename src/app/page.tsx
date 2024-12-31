@@ -14,16 +14,16 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <Navbar />
-      <Hero />
+      <Hero /> 
       <About />
-      <Pricing />
-      <TestimonialsSection />
-      <Schedule />
-      <Download />
-      <Universities />
+      <Universities /> 
+      <Pricing /> 
+      <TestimonialsSection /> 
+      <Download /> 
+      <Schedule /> 
       <Contact />
       <Footer />
       <ScrollButton />
     </main>
   );
-}
+ }

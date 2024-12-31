@@ -3,22 +3,42 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+ --background: #ffffff;
+ --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+ section {
+   @apply py-16;
+ }
+
+ section#hero {
+   @apply py-0;
+ }
+
+ section#about,
+ section#universities,
+ section#pricing,
+ section#testimonials,
+ section#download,
+ section#schedule,
+ section#contact {
+   @apply -mt-8;
+ }
 }
 
 html, body {
-  height: 100%; /* Asegura que ocupen toda la altura */
-  margin: 0; /* Remueve márgenes adicionales */
-  padding: 0; /* Remueve relleno adicional */
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ color: var(--foreground);
+ background: var(--background);
+ font-family: var(--font-inter, Arial), sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+ :root {
+   --background: #0a0a0a;
+   --foreground: #ededed;
+ }
 }
