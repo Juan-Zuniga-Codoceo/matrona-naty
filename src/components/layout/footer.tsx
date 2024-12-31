@@ -30,13 +30,13 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
             <div>
               <h4 className="font-semibold text-pink-500 mb-3">Horario de Atención</h4>
-              <p className="text-gray-600">Lunes a Viernes: 9:00 - 18:00</p>
+              <p className="text-gray-600">Lunes a Viernes: Por Confirmar</p>
               <p className="text-gray-600">Sábados: 9:00 - 13:00</p>
             </div>
             
             <div>
               <h4 className="font-semibold text-pink-500 mb-3">Contacto</h4>
-              <p className="text-gray-600">📞 +56 9 1234 5678</p>
+              <p className="text-gray-600">📞 +56 9 93314396</p>
               <p className="text-gray-600">📧 contacto@matronanaty.cl</p>
             </div>
             

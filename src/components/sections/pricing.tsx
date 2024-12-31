@@ -33,6 +33,18 @@ export default function Pricing() {
 
   const categories: CategoryItem[] = [
     {
+      title: "Atención Mamaria",
+      icon: <Activity className="w-8 h-8 text-[#E84E89]" />,
+      services: [
+        { 
+          name: "Evaluación mamaria", 
+          price: "20.000",
+          calendlyUrl: "https://calendly.com/matrona-naty/atencion-patologia-mamaria",
+          description: "Examen completo de mamas y orientación en prevención"
+        }
+      ]
+    },
+    {
       title: "Consulta General",
       icon: <User className="w-8 h-8 text-[#E84E89]" />,
       services: [
@@ -80,6 +92,7 @@ export default function Pricing() {
         }
       ]
     },
+    
     {
       title: "Atención Obstétrica",
       icon: <Baby className="w-8 h-8 text-[#E84E89]" />,
@@ -110,34 +123,26 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="py-20">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-gradient-to-b from-pink-50 to-white">
-        <div className="absolute inset-0 opacity-[0.15]" style={{
-          backgroundImage: `url('/pattern.svg')`,
-          backgroundSize: '60px 60px'
-        }} />
-      </div>
+    <section id="pricing" className="relative bg-gradient-to-b from-white to-pink-50 py-20">
+   <div className="max-w-6xl mx-auto px-4">
+     <div className="text-center mb-16">
+       <h2 className="text-4xl font-bold mb-4">
+         Mis <span className="text-[#E84E89]">Servicios</span>
+       </h2>
+       <div className="w-20 h-1 bg-[#E84E89] mx-auto mb-4"/>
+       <p className="text-lg text-gray-600">
+         Conoce mis servicios y sus valores. Agenda tu hora de manera fácil y rápida.
+       </p>
+     </div>
 
-      <div className="relative max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4">
-          Mis <span className="text-[#E84E89]">Servicios</span>
-        </h2>
-        <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-          Conoce mis servicios y sus valores. Agenda tu hora de manera fácil y rápida.
-        </p>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mb-16">
-          {categories.map((category, index) => (
-            <Dialog key={index}>
+     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+       {categories.map((category, index) => (
+         <Dialog key={index}>
               <DialogTrigger asChild>
                 <button className="group flex flex-col items-center w-full">
                   <div className="relative w-24 h-24 mb-4">
-                    {/* Círculo de fondo con animación */}
                     <div className="absolute inset-0 rounded-full bg-white shadow-md transition-all duration-300 group-hover:scale-110" />
-                    {/* Círculo decorativo */}
                     <div className="absolute inset-2 rounded-full bg-pink-50 transition-all duration-300 group-hover:bg-pink-100" />
-                    {/* Icono */}
                     <div className="absolute inset-0 flex items-center justify-center transform transition-transform duration-300 group-hover:scale-110">
                       {category.icon}
                     </div>
@@ -207,15 +212,15 @@ export default function Pricing() {
         </div>
 
         <div className="relative bg-white p-6 rounded-xl shadow-md max-w-2xl mx-auto">
-          <div className="absolute -top-3 left-6 px-4 py-1 bg-pink-50 rounded-full">
-            <Info className="w-4 h-4 text-[#E84E89]" />
-          </div>
-          <p className="text-gray-600 text-center">
-            * Los precios pueden variar según requerimientos específicos. 
-            Consulta por convenios y descuentos disponibles.
-          </p>
-        </div>
-      </div>
-    </section>
+       <div className="absolute -top-3 left-6 px-4 py-1 bg-pink-50 rounded-full">
+         <Info className="w-4 h-4 text-[#E84E89]" />
+       </div>
+       <p className="text-gray-600 text-center">
+         * Los precios pueden variar según requerimientos específicos. 
+         Consulta por convenios y descuentos disponibles.
+       </p>
+     </div>
+   </div>
+ </section>
   );
 }

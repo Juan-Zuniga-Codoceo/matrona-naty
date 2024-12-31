@@ -17,6 +17,7 @@ export default function Schedule() {
           <h2 className="text-3xl font-bold mb-2">
             Agenda tu <span className="text-[#E84E89]">Hora</span>
           </h2>
+          <div className="w-20 h-1 bg-[#E84E89] mx-auto mb-12" />
           <p className="text-gray-600 text-sm">
             Selecciona el tipo de atención y el horario que mejor te acomode
           </p>

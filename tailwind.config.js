@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -17,31 +16,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#702459", // purple-900
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#E84E89",
+          dark: "#D63F75",
         },
-        secondary: {
-          DEFAULT: "#FED7E2", // pink-200
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        matrona: {
-          pink: {
-            light: '#FFF5F7',
-            DEFAULT: '#FED7E2',
-            dark: '#D53F8C',
-          },
-          purple: {
-            light: '#9F7AEA',
-            DEFAULT: '#702459',
-            dark: '#521B41',
-          }
-        }
+        background: "#ffffff",
+        foreground: "#171717",
       },
       borderRadius: {
         lg: "var(--radius)",

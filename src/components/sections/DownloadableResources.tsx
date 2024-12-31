@@ -57,12 +57,13 @@ const resources = [
 
 export default function DownloadableResources() {
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-pink-50/30 to-white">
+    <section id="resources"  className="py-24 bg-gradient-to-b from-white via-pink-50/30 to-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             Recursos <span className="text-[#E84E89]">Gratuitos</span>
           </h2>
+          <div className="w-20 h-1 bg-[#E84E89] mx-auto mb-12" />
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Descarga nuestras guías gratuitas con información valiosa para cada etapa de tu maternidad
           </p>

@@ -36,14 +36,15 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="relative bg-gradient-to-b from-pink-50 to-white py-24"> 
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            Sobre <span className="text-[#E84E89]">Matrona Naty</span>
-          </h2>
-          <div className="w-20 h-1 bg-[#E84E89] mx-auto"/>
-        </div>
+    <section id="about" className="relative py-24"> 
+     <div className="absolute inset-0 bg-gradient-to-b from-pink-50 to-white" />
+     <div className="container max-w-6xl mx-auto px-4 relative">
+       <div className="text-center mb-16">
+         <h2 className="text-4xl font-bold mb-4">
+           Sobre <span className="text-[#E84E89]">Matrona Naty</span>
+         </h2>
+         <div className="w-20 h-1 bg-[#E84E89] mx-auto mb-4"/>
+       </div>
 
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
@@ -67,7 +68,7 @@ export default function About() {
             <div className="space-y-6">
               <p className="text-xl text-gray-700 leading-relaxed">
                 Soy una matrona especializada en el cuidado integral de la salud de la mujer, 
-                con más de 8 años de experiencia en atención prenatal, ginecología y prevención 
+                con experiencia en atención prenatal, ginecología y prevención 
                 del cáncer de mama.
               </p>
               

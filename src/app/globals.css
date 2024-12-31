@@ -14,7 +14,10 @@
   }
 }
 
-body {
+html, body {
+  height: 100%; /* Asegura que ocupen toda la altura */
+  margin: 0; /* Remueve márgenes adicionales */
+  padding: 0; /* Remueve relleno adicional */
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;

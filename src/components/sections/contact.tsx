@@ -19,7 +19,7 @@ export default function Contact() {
   });
 
   const [isSending, setIsSending] = useState<boolean>(false);
-  const whatsappNumber = '56912345678';
+  const whatsappNumber = '+56993314396';
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -56,10 +56,11 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
-            Contáctanos
+            Contáctame
           </h2>
+          <div className="w-20 h-1 bg-[#E84E89] mx-auto mb-12" />
           <p className="text-lg text-gray-600">
-            Estamos aquí para resolver todas tus dudas
+            Estoy aquí para resolver todas tus dudas
           </p>
         </div>
 
@@ -91,7 +92,7 @@ export default function Contact() {
                                 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Phone className="w-6 h-6 text-[#E84E89]" />
                   </div>
-                  <span className="text-lg">+569 1234 5678</span>
+                  <span className="text-lg">+569 9331 4396</span>
                 </a>
 
                 <a 

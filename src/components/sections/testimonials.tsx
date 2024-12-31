@@ -161,6 +161,7 @@ export default function TestimonialsCarousel() {
         <h2 className="text-4xl font-bold text-center mb-4">
           Mis <span className="text-[#E84E89]">Pacientes</span>
         </h2>
+        <div className="w-20 h-1 bg-[#E84E89] mx-auto mb-12" />
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Conoce las experiencias de quienes han confiado en mi servicio
         </p>
