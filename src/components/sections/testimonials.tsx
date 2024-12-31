@@ -306,7 +306,7 @@ export default function TestimonialsCarousel() {
         <div className="text-center mt-16">
           <button
             className="bg-[#E84E89] text-white px-8 py-3 rounded-full font-medium shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
-            onClick={() => window.location.href = '#contacto'}
+            onClick={() => window.location.href = '#schedule'}
           >
             Agenda tu Consulta Ahora
           </button>
