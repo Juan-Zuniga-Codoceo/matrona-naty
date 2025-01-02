@@ -29,19 +29,17 @@ const Hero = () => {
      <div className="relative z-10 max-w-6xl mx-auto px-4 h-full flex items-center">
        <div className="max-w-2xl py-12">
          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 mb-6">
-           Cuidado De La Mujer{' '}
-           <span className="text-[#E84E89]">Especializado</span>
+           Cuidado Especializado{' '}
+           <br />
+           <span className="text-[#E84E89]">De la mujer</span>
          </h1>
 
          <p className="text-xl text-gray-700 mb-4 leading-relaxed">
            Brindando atención personalizada y apoyo durante todas las etapas 
-           de tu maternidad.
+           de tu vida.
          </p>
 
-         <p className="text-lg text-gray-600 mb-8">
-           Experta en control prenatal, lactancia y prevención de cáncer de mama.
-         </p>
-
+      
          <div className="flex flex-col sm:flex-row gap-4">
            <button 
              onClick={() => scrollToSection('#schedule')}

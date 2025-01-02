@@ -42,28 +42,8 @@ const AnimatedStat = ({ end, suffix, title, icon: Icon }: {
   );
 };
 
-const StatsSection = () => (
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-12">
-    <AnimatedStat
-      end={500}
-      suffix="+"
-      title="Pacientes Atendidas"
-      icon={Users}
-    />
-    <AnimatedStat
-      end={10}
-      suffix="+"
-      title="Años de Experiencia"
-      icon={Award}
-    />
-    <AnimatedStat
-      end={24}
-      suffix="/7"
-      title="Atención Disponible"
-      icon={Calendar}
-    />
-  </div>
-);
+//Borrar seccion de stats
+
 
 const WavePattern = () => (
   <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-1">
@@ -300,8 +280,7 @@ export default function TestimonialsCarousel() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <StatsSection />
+       
 
         {/* CTA Section */}
         <div className="text-center mt-16">
