@@ -11,6 +11,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Matrona Naty - Cuidado Maternal Especializado',
   description: 'Servicios profesionales de matrona, incluyendo control prenatal, asesoría en lactancia y más.',
+  icons: {
+    icon: [
+      { url: '/favicon/logo.ico', sizes: '32x32' },
+      { url: '/favicon/logo.png', sizes: '192x192' }
+    ],
+    apple: [
+      { url: '/favicon/apple-touch-icon-ipad.png', sizes: '192x192' },
+      { url: '/favicon/apple-touch-icon-iphone.png', sizes: '180x180' }
+    ]
+  }
 }
 
 export default function RootLayout({
