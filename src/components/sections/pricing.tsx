@@ -123,7 +123,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="relative bg-gradient-to-b from-white to-pink-50 py-20">
+    <section id="services" className="relative bg-gradient-to-b from-white to-pink-50 py-20">
    <div className="max-w-6xl mx-auto px-4">
      <div className="text-center mb-16">
        <h2 className="text-4xl font-bold mb-4">

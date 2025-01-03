@@ -44,7 +44,7 @@ export const testimonials: Testimonial[] = [
     service: 'Atención Obstétrica',
     rating: 5,
     comment: 'Mi experiencia con la Matrona Naty fue excepcional. Su acompañamiento durante todo mi embarazo me dio mucha seguridad y tranquilidad. Siempre disponible para resolver dudas.',
-    date: '2024-02-15',
+    date: '2024-12-15',
     location: 'Valparaíso'
   },
   {
@@ -53,7 +53,7 @@ export const testimonials: Testimonial[] = [
     service: 'Atención Postparto',
     rating: 5,
     comment: 'Excelente profesional. Me ayudó muchísimo en el periodo de lactancia y postparto. Sus consejos fueron fundamentales para mi recuperación.',
-    date: '2024-02-10',
+    date: '2024-12-10',
     location: 'Viña del Mar'
   },
   {
@@ -62,7 +62,7 @@ export const testimonials: Testimonial[] = [
     service: 'Planificación Familiar',
     rating: 5,
     comment: 'Muy profesional y cercana. Me explicó todas las opciones disponibles y me ayudó a tomar la mejor decisión para mi caso.',
-    date: '2024-01-28',
+    date: '2024-11-28',
     location: 'Quilpué'
   },
   {
@@ -71,7 +71,7 @@ export const testimonials: Testimonial[] = [
     service: 'Atención Ginecológica',
     rating: 5,
     comment: 'Excelente atención, muy dedicada y profesional. Me sentí muy cómoda durante toda la consulta.',
-    date: '2024-01-20',
+    date: '2025-01-02',
     location: 'Valparaíso'
   },
   {
@@ -80,7 +80,7 @@ export const testimonials: Testimonial[] = [
     service: 'Consulta General',
     rating: 5,
     comment: 'La mejor matrona que he tenido. Muy clara en sus explicaciones y siempre dispuesta a resolver dudas.',
-    date: '2024-01-15',
+    date: '2025-01-02',
     location: 'Viña del Mar'
   }
 ];

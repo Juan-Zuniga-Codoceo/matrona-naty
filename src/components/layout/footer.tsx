@@ -88,7 +88,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h4 className="font-semibold text-pink-500 mb-4">Horario de Atención</h4>
               <div className="space-y-2">
-                <p className="text-gray-600">Lunes a Viernes: Por Confirmar</p>
+                <p className="text-gray-600">Lunes a Viernes: 9:00 - 13:00 / 14:00 - 20:00</p>
                 <p className="text-gray-600">Sábados: 9:00 - 13:00</p>
               </div>
             </div>
@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h4 className="font-semibold text-pink-500 mb-4">Ubicación</h4>
               <div className="space-y-2">
-                <p className="text-gray-600">Condell 1190, Valparaíso</p>
+                <p className="text-gray-600">Condell 1190, piso 12. Oficina 125. Valparaíso </p>
                 <p className="text-gray-600">Región Valparaíso, Chile</p>
               </div>
             </div>
