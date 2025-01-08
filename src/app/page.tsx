@@ -1,7 +1,7 @@
 import Hero from '@/components/sections/hero';
 import About from '@/components/sections/about';
 import Pricing from '@/components/sections/pricing';
-import Schedule from '@/components/sections/schedule';
+
 import Contact from '@/components/sections/contact';
 import Navbar from '@/components/layout/navbar';
 import TestimonialsSection from '@/components/sections/testimonials';
@@ -20,7 +20,7 @@ export default function Home() {
       <Pricing /> 
       <TestimonialsSection /> 
       <Download /> 
-      <Schedule /> 
+     
       <Contact />
       <Footer />
       <ScrollButton />

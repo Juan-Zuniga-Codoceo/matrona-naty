@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { FileText, Download, Baby, Heart, Apple, Activity, BookOpen } from 'lucide-react';
+import { FileText, Download, Baby, Heart, Apple, Activity, BookOpen, Stethoscope } from 'lucide-react';
 
 const resources = [
   {
@@ -52,6 +52,20 @@ const resources = [
     description: "Información completa sobre métodos de planificación familiar.",
     icon: BookOpen,
     downloadUrl: "/descargas/Guía sobre métodos anticonceptivos.pdf",
+  },
+  {
+    id: 8,
+    title: "Guía de Patología Cervical",
+    description: "Información detallada sobre patologías cervicales, diagnóstico y tratamiento.",
+    icon: Stethoscope,
+    downloadUrl: "/descargas/PATOLOGIA CERVICAL_20250105_210828_0000.pdf",
+  },
+  {
+    id: 9,
+    title: "Guía de Patología Mamaria",
+    description: "Información completa sobre patologías mamarias, prevención y cuidados.",
+    icon: Stethoscope,
+    downloadUrl: "/descargas/patologia mamaria_20250105_210905_0000.pdf",
   }
 ];
 

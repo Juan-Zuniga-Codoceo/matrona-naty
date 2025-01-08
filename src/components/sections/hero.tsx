@@ -42,7 +42,7 @@ const Hero = () => {
       
          <div className="flex flex-col sm:flex-row gap-4">
            <button 
-             onClick={() => scrollToSection('#schedule')}
+             onClick={() => scrollToSection('#contact')}
              className="bg-[#E84E89] text-white px-8 py-4 rounded-full 
                       transition-all duration-300 shadow-lg hover:shadow-xl 
                       transform hover:-translate-y-0.5 hover:bg-[#D63F75]
