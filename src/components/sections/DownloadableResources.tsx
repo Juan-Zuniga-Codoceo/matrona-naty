@@ -66,6 +66,13 @@ const resources = [
     description: "Información completa sobre patologías mamarias, prevención y cuidados.",
     icon: Stethoscope,
     downloadUrl: "/descargas/patologia mamaria_20250105_210905_0000.pdf",
+  },
+  {
+    id: 10,
+    title: "La importancia de tomarse el PAP",
+    description: "Detectar a tiempo salva vidas. ¡Hazte el PAP, un acto de amor propio! ❤️",
+    icon: Activity,
+    downloadUrl: "/descargas/La importancia de tomarse el PAP.pdf",
   }
 ];
 
